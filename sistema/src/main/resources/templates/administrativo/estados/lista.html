@@ -13,6 +13,9 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     <title>Olá, mundo!</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    
 </head>
 
 <body>
@@ -59,10 +62,10 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
             <td th:text="${estado.sigla}"></td>
             <td>
                 <a th:href="@{/editarEstado/{id}(id=${estado.id})}" class="btn btn-sm btn-warning">
-                    Editar
+                    <i class="fa-solid fa-pen-to-square"></i>
                 </a>
                 <a th:href="@{/removerEstado/{id}(id=${estado.id})}" class="btn btn-sm btn-danger">
-                    Remover
+                    <i class="fa-solid fa-delete-left"></i>
                 </a>
             </td>
         </tr>
